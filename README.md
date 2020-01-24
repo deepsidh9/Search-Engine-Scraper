@@ -14,7 +14,7 @@ Python 3.6+ is required
 
 Install via pip:
 
-`pip install search_engine_scraper`
+`pip install search-engine-scraper`
 
 Import the search engines as :
 
