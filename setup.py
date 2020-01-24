@@ -6,7 +6,7 @@ with open(path.join(this_directory, 'README.md'), encoding='utf-8') as f:
     long_description = f.read()
 
 setup(name='search_engine_scraper',
-      version='0.3',
+      version='0.4',
       description='A module to scrape popular search engines',
       long_description=long_description,
        long_description_content_type='text/markdown',
