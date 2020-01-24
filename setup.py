@@ -1,6 +1,6 @@
 from setuptools import setup
 
-setup(name='funniest',
+setup(name='search-engine-scraper',
       version='0.1',
       description='A module to scrape popular search engines',
       url='https://github.com/deepsidh9/Search-Engine-Scraper',
