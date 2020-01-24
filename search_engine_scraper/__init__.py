@@ -1,14 +1,21 @@
+import os
 import time
 import random
 import requests
 import urllib
+import pkg_resources
 import traceback
 from lxml import html
 from lxml.html import fromstring
 from itertools import cycle
 
-PROXY_PATH = "./proxies.txt"
+# PROXY_PATH = "proxies.txt"
 PROXY_USAGE_TIMEOUT = 900
+# proxies = pkg_resources.resource_stream(__name__, 'search_engine_scraper/proxies.txt')
+# user_agents_file = pkg_resources.resource_stream(__name__, 'search_engine_scraper/user_agents.txt')
+PROXY_PATH = os.path.join(os.path.dirname(__file__),'proxies.txt')
+user_agents_file = os.path.join(os.path.dirname(__file__),'user_agents.txt')
+
 class search_engine: 
 
     def __init__(self,serving_engine):
@@ -37,12 +44,12 @@ class serve_search_engines(serving_engine):
     def __init__(self):
         self.proxy_pool = []
         self.proxy_check()
-        self.user_agents = self.load_user_agents(uafile="user_agents.txt")
+        self.user_agents = self.load_user_agents(uafile=user_agents_file)
 
     def proxy_scrape(self):
         """
         Returns a list of free proxies
-
+)
         """
         print("Getting new live proxies")
         url = 'https://free-proxy-list.net/'
