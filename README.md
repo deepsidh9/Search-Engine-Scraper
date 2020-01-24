@@ -16,7 +16,7 @@ Install via pip:
 
 `pip install search_engine_scraper`
 
-Import the required search engine as :
+Import the search engines as :
 
 `from search_engine_scraper import google_search,bing_search,yahoo_search`
 
