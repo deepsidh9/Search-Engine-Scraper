@@ -1,3 +1,4 @@
+[![Downloads](https://pepy.tech/badge/search-engine-scraper)](https://pepy.tech/project/search-engine-scraper) [![Downloads](https://pepy.tech/badge/search-engine-scraper/month)](https://pepy.tech/project/search-engine-scraper/month)
 # Search-Engine-Scraper
 A module to scrape popular search engines
 
